@@ -1,0 +1,413 @@
+:lang(zh-cmn-Hans) {
+    font-family: 'Helvetica Neue',arial,\5FAE\8F6F\96C5\9ED1,'Hiragino Sans GB',sans-serif;
+}
+
+:lang(ja) {
+    font-family: 'Helvetica Neue',arial,'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+body {
+    color: #525252;
+    margin: 0;
+}
+
+img {
+    border: 0;
+}
+
+#menu-toggle {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.37);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    z-index: 8;
+    background: #525252;
+}
+
+#menu-toggle img {
+    width: 24px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#popup-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 230px;
+    height: auto;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+
+#popup-box .content-box {
+    opacity: 0;
+    transform: translateY(200%);
+    padding: 10px 18px;
+}
+
+#popup-box .content-box .words-wrap {
+    display: block;
+}
+
+#popup-box.box-show {
+    visibility: visible;
+}
+
+#popup-box.box-show .content-box {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s 0.2s;
+    background: #fff;
+      border-radius: 6px;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+    z-index: 40;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.8);
+    transition: all 0.3s;
+}
+
+#overlay.box-show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 
+ * clearfix hack
+ * http://nicolasgallagher.com/micro-clearfix-hack/
+ */
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+
+ul, ol {
+    padding:0;
+    margin:0;
+    list-style:none;
+}
+
+a {
+    text-decoration:none;
+    color: #525252;
+}
+
+#footer {
+    height: 4em;
+}
+
+#footer a {
+    margin: 16px auto;
+    display: block;
+    width: 100px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: underline;
+    color: #8E8D8D;
+}
+
+#sidebar {
+    width: 120px;
+    background: #525252;
+    height: 100%;
+    float: left;
+    position: fixed;
+    left: 100%;
+    overflow-y: auto;
+    z-index: 4;
+}
+
+#content {
+    color: #525252;
+    position: relative;
+}
+
+table {
+    border: none;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: 1px solid #E0E0E0;
+    padding: 6px;
+    vertical-align: top;
+    overflow: hidden;
+    width: 14.28%;
+}
+
+.day {
+    background: rgba(211, 211, 211, 0.91);
+    height: 33px;
+    position: fixed;
+    width: 100%;
+    z-index: 3;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 33px;
+    color: #717374;
+}
+
+.day li {
+    float: left;
+    width: 14.28%;
+    text-align: center;
+}
+
+.day li span {
+    display: none;
+}
+
+.bangumi {
+    padding-top: 32px;
+}
+
+.bangumi td img:hover {
+    cursor: pointer;
+}
+
+#popup-box .content-box img,
+.bangumi td img {
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#popup-box .content-box img {
+    width: 100px;
+}
+
+.words-wrap {
+    text-align: center;
+    display: none;
+}
+
+.links-wrap {
+    font-size: 12px;
+    margin-top: 12px;
+}
+
+.links-wrap li {
+    float: left;
+    text-align: center;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 17px;
+    margin: 2px 0;
+}
+
+.name-ja {
+    font-size: 12px;
+    color: #939393;
+}
+
+.zone {
+    position: relative;
+}
+
+.zone-title {
+    position: relative;
+    margin: 7px 0;
+}
+
+.zone-title:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    background: #CACACA;
+    height: 1px;
+    top: 8px;
+    z-index: -1;
+}
+
+.zone-title .white {
+    background: #fff;
+    width: 24px;
+    margin: 0 auto;
+    z-index: 2;
+    padding: 0px 11px;
+}
+
+.official {
+    width: 136px;
+    margin: 0 auto;
+}
+
+ul.unpack li > a,
+div.pack .pack-title,
+div.pack a {
+    border: 1px solid #525252;
+    float: left;
+    line-height: 1.5;
+    padding: 0 4px;
+}
+
+ul.unpack li > a,
+div.pack .pack-title {
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+#popup-box .words-wrap a:hover,
+.bangumi a:hover,
+div.pack .pack-title {
+    background: #525252;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+div.pack a {
+    border-left: none;
+}
+
+ul.unpack li > a,
+div.pack a.last {
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+ul.unpack li {
+    margin: 0 6px 4px 0;
+}
+
+
+@media only screen and (min-width: 852px) {
+
+    .bangumi td img {
+        width: 60px;
+    }
+
+    .words-wrap {
+        display: block;
+    }
+
+    .links-wrap .goodbye {
+        display: none;
+    }
+
+    .links-wrap .repair {
+        border-left: 1px solid #525252;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    .official {
+        width: 103px;
+    }
+
+    .bangumi td img:hover {
+        cursor: default;
+    }
+
+    .day {
+        font-size: 17px;
+        font-weight: bold;
+    }
+
+}
+
+@media only screen and (min-width: 1065px) {
+
+    .links-wrap .goodbye {
+        display: block;
+    }
+
+    .links-wrap .repair {
+        border-left: none;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .official {
+        width: 136px;
+    }
+
+    .day li span {
+        display: inline-block;
+    }
+
+}
+
+@media only screen and (min-width: 1180px) {
+
+    #menu-toggle {
+        display: none;
+    }
+
+    #sidebar {
+        left: 0;
+        transform: none !important;
+    }
+
+    #content {
+        margin-left: 119px;
+    }
+
+    .day {
+        left: 120px;
+        right: 0;
+        width: auto;
+    }
+}
+
+@media only screen and (min-width: 1570px) {
+
+    .bangumi td img {
+        float: left;
+    }
+
+    .words-wrap {
+        margin-left: 66px;
+        text-align: left;
+    }
+
+    .zone-title {
+        position: absolute;
+        margin: 0;
+        left: -34px;
+    }
+    
+    .zone-title:before {
+        display: none;
+    }
+    
+    .zone-title .white {
+        background: transparent;
+        width: auto;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .official {
+        width: auto;
+        margin: 0;
+        margin-bottom: 4px;
+    }
+
+}
