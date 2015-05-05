@@ -3,7 +3,7 @@ A responsive bangumi table design.
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_s.png)
 
-##Open the menu:
+##Open the sidebar:
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_s_menu.png)
 
@@ -23,6 +23,6 @@ A responsive bangumi table design.
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_xl.png)
 
-##And in the biggest window:
+##And in the biggest window (You can see the sidebar is located in left side):
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_xxl.png)
