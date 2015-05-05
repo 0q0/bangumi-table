@@ -11,7 +11,7 @@ A responsive bangumi table design.
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_s_pop.png)
 
-##Bigger:
+##In bigger size:
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_m.png)
 
@@ -19,8 +19,10 @@ A responsive bangumi table design.
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_l.png)
 
-##More more bigger...
+##More more bigger :P
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_xl.png)
+
+##And in the biggest window:
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_xxl.png)
