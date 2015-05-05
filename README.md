@@ -3,13 +3,15 @@ A responsive bangumi table design
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_s.png)
 
-Menu:
+##Open the menu:
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_s_menu.png)
 
-A popup modal window to show the info:
+##A popup modal window to show the info:
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_s_pop.png)
+
+##More large sizes:
 
 ![](https://github.com/0q0/bangumi-table/blob/master/readme_image/size_m.png)
 
